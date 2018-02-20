@@ -1,39 +1,30 @@
 #!/bin/bash
-clear
-echo "CALCULATOR"
-echo "enter first operand:"
-read a
-echo "enter second operand:"
-read b
-check=0
-while [ $check -eq 0 ]
-do 
-echo "enter :"
-echo "1.addition "
-echo "2.subtraction"
-echo "3.multiplication"
-echo "4.division"
-echo "5.modulus"
-echo "6.exit"
-read c
-if [ "$c" -eq "1" ];then
-d=$((a +b ))
-echo "$d"
-elif [ "$c" -eq "2" ];then
-d=$((a -b ))
-echo "$d"
-elif [ "$c" -eq "3" ];then
-d=$((a *b ))
-echo "$d"
-elif [ "$c" -eq "4" ];then
-d=$((a /b ))
-echo "$d"
-elif [ "$c" -eq "5" ];then
-d=$((a %b ))
-echo "$d"
-elif [ "$c" -eq "6" ];then
+echo " CALCULATOR "
+echo "enter a and b "
+read a b 
 check=1
-fi
-done
-
-
+while [ $check -eq 1 ]
+ do 
+ echo " 1.addition"
+ echo " 2.subtraction"
+ echo " 3.multiplication "
+ echo " 4.division "
+ echo " 5.modulus"
+ echo " 6.exit"
+ read c
+ case $c in
+   1) d=$((a +b ))
+      echo " $d ";;
+   2) d=$((a -b ))
+      echo " $d ";;
+   3) d=$((a *b))
+      echo " $d ";;
+   4) d=$((a /b))
+	echo " $d ";;
+   5) d=$((a %b))
+	echo " $d ";;
+   6) check=0;;
+   *) echo "invalid input ";;
+ esac
+ done 
+		
