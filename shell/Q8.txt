@@ -1,0 +1,11 @@
+Git commands that are commonly used 
+
+
+
+git init
+git add .
+git push
+git commit -m "comments"
+git pull
+git stash
+git status
