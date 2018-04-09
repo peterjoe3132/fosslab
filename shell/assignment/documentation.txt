@@ -1,0 +1,29 @@
+
+Problem Statement:
+
+Download s1 and s2 results from ktu website. 
+Extract results of c4b from it.
+Calculate s1 and s2 sgpa, using that calculate cgpa
+
+
+Procedure followed :
+
+1. The details of c4b students are downloaded from sirs site.
+
+2.The results are downloaded from KTU website
+ 
+3.The pdf is converted to text file .
+
+4.All the special characters are removed 
+
+5.The grades of only the CS students are taken from the whole batch results.
+
+6.Mark list of C4B is created 
+
+7.Replace the grades with marks
+
+8.All the temporary files are removed 
+
+9.The CGPA is calculated from both the semesters 
+
+10.The SGPA is put into the file answer.txt along with the registration number.
