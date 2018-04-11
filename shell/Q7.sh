@@ -2,7 +2,7 @@
 echo $#
 if [ "$#" != 2 ]
 then
-	echo "3 parameters required $2"
+	echo "invalid number of parameters"
 else
 	echo $?
 	grep $1 $2
